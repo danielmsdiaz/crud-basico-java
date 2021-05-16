@@ -39,7 +39,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         jSpinner1 = new javax.swing.JSpinner();
         jPanel1 = new javax.swing.JPanel();
-        jInternalFrame1 = new javax.swing.JInternalFrame();
         jPanel2 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         jPanel6 = new javax.swing.JPanel();
@@ -65,8 +64,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -77,9 +74,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 0, Short.MAX_VALUE)
         );
-
-        jInternalFrame1.setBackground(new java.awt.Color(255, 255, 255));
-        jInternalFrame1.setVisible(true);
 
         jPanel2.setBackground(new java.awt.Color(182, 226, 211));
         jPanel2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -246,14 +240,14 @@ public class TelaPrincipal extends javax.swing.JFrame {
                     .addComponent(listaPessoas, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel10Layout.createSequentialGroup()
                         .addComponent(btnEditar, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(btnDeletar, javax.swing.GroupLayout.PREFERRED_SIZE, 267, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel10Layout.createSequentialGroup()
                         .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addComponent(cpfBuscar)
                             .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(buscar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addComponent(buscar, javax.swing.GroupLayout.DEFAULT_SIZE, 282, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         jPanel10Layout.setVerticalGroup(
@@ -268,10 +262,10 @@ public class TelaPrincipal extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(listaPessoas, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnDeletar, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnEditar, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(14, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
@@ -339,8 +333,9 @@ public class TelaPrincipal extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(20, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -364,41 +359,114 @@ public class TelaPrincipal extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        javax.swing.GroupLayout jInternalFrame1Layout = new javax.swing.GroupLayout(jInternalFrame1.getContentPane());
-        jInternalFrame1.getContentPane().setLayout(jInternalFrame1Layout);
-        jInternalFrame1Layout.setHorizontalGroup(
-            jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jInternalFrame1Layout.createSequentialGroup()
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-        jInternalFrame1Layout.setVerticalGroup(
-            jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-        );
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(219, 219, 219)
-                .addComponent(jInternalFrame1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(1218, 1218, 1218)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(83, 83, 83)
+                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jInternalFrame1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(254, 254, 254)
+                .addContainerGap()
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnDeletarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeletarActionPerformed
+        try {
+            String nomeRet = listaPessoas.getSelectedItem().toString();
+            pst = con.prepareStatement("select * from cadastros" + " WHERE nome = ? LIMIT 1");
+            pst.setString(1,nomeRet);
+            rs = pst.executeQuery();
+
+            pst = con.prepareStatement("delete from cadastros" + " WHERE nome = ? ");
+            pst.setString(1, nomeRet);
+            int k = pst.executeUpdate();
+
+            if(k == 1){
+                listaPessoas.removeAllItems();
+                cpfBuscar.setText("");
+                JOptionPane.showMessageDialog(this, "O agendamento foi removido com sucesso", "Sucesso!", JOptionPane.INFORMATION_MESSAGE);
+            }
+
+        } catch (SQLException ex) {
+            Logger.getLogger(TelaPrincipal.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_btnDeletarActionPerformed
+
+    private void btnEditarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditarActionPerformed
+        try {
+            String nomeRet = listaPessoas.getSelectedItem().toString();
+            pst = con.prepareStatement("select * from cadastros" + " WHERE nome = ?");
+            pst.setString(1,nomeRet);
+            rs = pst.executeQuery();
+
+            while(rs.next()){
+                nome.setText(rs.getString(1));
+                cpfCriar.setText(rs.getString(2));
+                dataNasc.setText(rs.getString(3));
+            }
+
+            pst = con.prepareStatement("delete from cadastros" + " WHERE nome = ? ");
+            pst.setString(1, nomeRet);
+            int k = pst.executeUpdate();
+
+            if(k == 1){
+                listaPessoas.removeAllItems();
+                cpfBuscar.setText("");
+            }
+
+        } catch (SQLException ex) {
+            Logger.getLogger(TelaPrincipal.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_btnEditarActionPerformed
+
+    private void buscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buscarActionPerformed
+        try {
+            listaPessoas.removeAllItems();
+            String cpf = cpfBuscar.getText().toString();
+
+            if (cpf.equals(null) || cpf.equals("")) {
+                JOptionPane.showMessageDialog(this, "Digite seu cpf!", "Alerta", JOptionPane.ERROR_MESSAGE);
+                return;
+            } else {
+                if (!cpf.matches("^[0-9]*$")) {
+                    JOptionPane.showMessageDialog(this, "O cpf só pode conter números", "Alerta", JOptionPane.ERROR_MESSAGE);
+                    return;
+                } else {
+                    if (cpf.length() != 11) {
+                        JOptionPane.showMessageDialog(this, "O cpf tem que conter 11 digitos", "Alerta", JOptionPane.ERROR_MESSAGE);
+                        return;
+                    }
+                }
+            }
+
+            pst = con.prepareStatement("select * FROM cadastros" + " WHERE cpf = ? LIMIT 1");
+            pst.setString(1, cpf);
+            rs = pst.executeQuery();
+
+            while(rs.next()){
+                listaPessoas.addItem(rs.getString(1));
+                cpfBuscar.setText("");
+            }
+
+        } catch (SQLException ex) {
+            Logger.getLogger(TelaPrincipal.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_buscarActionPerformed
 
     private void botaoAdicionarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoAdicionarActionPerformed
 
@@ -461,91 +529,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         } catch (SQLException ex) {
             Logger.getLogger(TelaPrincipal.class.getName()).log(Level.SEVERE, null, ex);
         }
-
     }//GEN-LAST:event_botaoAdicionarActionPerformed
-
-    private void buscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buscarActionPerformed
-        try {
-            listaPessoas.removeAllItems();
-            String cpf = cpfBuscar.getText().toString();
-            
-            if (cpf.equals(null) || cpf.equals("")) {
-                JOptionPane.showMessageDialog(this, "Digite seu cpf!", "Alerta", JOptionPane.ERROR_MESSAGE);
-                return;
-            } else {
-                if (!cpf.matches("^[0-9]*$")) {
-                    JOptionPane.showMessageDialog(this, "O cpf só pode conter números", "Alerta", JOptionPane.ERROR_MESSAGE);
-                    return;
-                } else {
-                    if (cpf.length() != 11) {
-                        JOptionPane.showMessageDialog(this, "O cpf tem que conter 11 digitos", "Alerta", JOptionPane.ERROR_MESSAGE);
-                        return;
-                    }
-                }
-            }
-            
-            pst = con.prepareStatement("select * FROM cadastros" + " WHERE cpf = ? LIMIT 1");
-            pst.setString(1, cpf);
-            rs = pst.executeQuery();
-          
-            while(rs.next()){
-                listaPessoas.addItem(rs.getString(1));
-                cpfBuscar.setText("");  
-            }
-                
-        } catch (SQLException ex) {
-            Logger.getLogger(TelaPrincipal.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }//GEN-LAST:event_buscarActionPerformed
-
-    private void btnEditarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditarActionPerformed
-        try {
-            String nomeRet = listaPessoas.getSelectedItem().toString();
-            pst = con.prepareStatement("select * from cadastros" + " WHERE nome = ?");
-            pst.setString(1,nomeRet);
-            rs = pst.executeQuery();
-            
-            while(rs.next()){
-                nome.setText(rs.getString(1));
-                cpfCriar.setText(rs.getString(2));
-                dataNasc.setText(rs.getString(3));
-            }
-            
-            pst = con.prepareStatement("delete from cadastros" + " WHERE nome = ? ");
-            pst.setString(1, nomeRet);
-            int k = pst.executeUpdate();
-            
-            if(k == 1){
-                listaPessoas.removeAllItems();
-                cpfBuscar.setText("");
-            }
-            
-        } catch (SQLException ex) {
-            Logger.getLogger(TelaPrincipal.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }//GEN-LAST:event_btnEditarActionPerformed
-
-    private void btnDeletarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeletarActionPerformed
-        try {
-            String nomeRet = listaPessoas.getSelectedItem().toString();
-            pst = con.prepareStatement("select * from cadastros" + " WHERE nome = ? LIMIT 1");
-            pst.setString(1,nomeRet);
-            rs = pst.executeQuery();
-            
-            pst = con.prepareStatement("delete from cadastros" + " WHERE nome = ? ");
-            pst.setString(1, nomeRet);
-            int k = pst.executeUpdate();
-            
-            if(k == 1){
-                listaPessoas.removeAllItems();
-                cpfBuscar.setText("");
-                JOptionPane.showMessageDialog(this, "O agendamento foi removido com sucesso", "Sucesso!", JOptionPane.INFORMATION_MESSAGE);
-            }
-            
-        } catch (SQLException ex) {
-            Logger.getLogger(TelaPrincipal.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }//GEN-LAST:event_btnDeletarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -590,7 +574,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JTextField cpfBuscar;
     private javax.swing.JTextField cpfCriar;
     private javax.swing.JTextField dataNasc;
-    private javax.swing.JInternalFrame jInternalFrame1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
